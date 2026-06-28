@@ -1,5 +1,5 @@
 # bash-cybersecurity-basics
-## Funcionalidades del script
+# Funcionalidades del script
 
 El script se ejecuta en un bucle continuo while true mostrando un menú interactivo con las siguientes opciones:
 
@@ -11,7 +11,7 @@ El script se ejecuta en un bucle continuo while true mostrando un menú interact
 6. **Mostrar puertos abiertos en local:** Escanea los puertos que estén escuchando utilizando la herramienta "ss", filtrando duplicados para mostrar qué servicios locales podrían ser vulnerables.
 7. **Salir:** Finaliza la ejecución del script de forma controlada con un "exit 0".
 
-## Uso y Ejecución
+# Uso y Ejecución
 
 Para ejecutar el script, es necesario otorgarle permisos de ejecución y lanzarlo desde la terminal. Se recomienda ejecutarlo con privilegios elevados (sudo) para que la opción 6 (ss) pueda leer correctamente todos los procesos asociados a los puertos en escucha.
 
