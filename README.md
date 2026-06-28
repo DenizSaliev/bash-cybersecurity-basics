@@ -1,9 +1,9 @@
 # bash-cybersecurity-basics
 ## Funcionalidades del script
 
-El script se ejecuta en un bucle continuo (while true) mostrando un menú interactivo con las siguientes opciones:
+El script se ejecuta en un bucle continuo while true mostrando un menú interactivo con las siguientes opciones:
 
-1. **Mostrar dirección IP:** Extrae de forma limpia la dirección IP local de la máquina, omitiendo las interfaces de loopback (`127.0.0.1`).
+1. **Mostrar dirección IP:** Extrae de forma limpia la dirección IP local de la máquina, omitiendo las interfaces de loopback 127.0.0.1.
 2. **Mostrar puerta de enlace:** Identifica el Gateway predeterminado por el que sale el tráfico.
 3. **Mostrar DNS configurado:** Lee el archivo "/etc/resolv.conf" para mostrar los servidores de resolución de nombres activos.
 4. **Comprobar conectividad:** Realiza un "ping" silencioso a "8.8.8.8" (Google) para verificar la salida a Internet.
