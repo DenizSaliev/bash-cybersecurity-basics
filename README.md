@@ -10,7 +10,7 @@ Cada proyecto está desarrollado bajo estándares limpios, modulares y documenta
 
 ### [1. Network Diagnostics & Socket Analyzer](./network-diagnostics/)
 - **Script:** `check_network.sh`
-- **Propósito:** Automatiza el diagnóstico de conectividad en múltiples capas (Capa 3 y Capa 7), mapea el direccionamiento IP/Gateway y analiza la superficie de ataque local listando sockets y puertos abiertos mediante `ss`.
+- **Propósito:** Automatiza el diagnóstico de conectividad en múltiples capas (Capa 3 y Capa 7), mapea el direccionamiento IP/Gateway y analiza la superficie de ataque local listando puertos abiertos mediante `ss`.
 - **Ideal para:** Verificaciones rápidas previas a auditorías o despliegues de servidores.
 
 ### [2. Local System Auditor & Forensic Gatherer](./local-system-auditor/)
@@ -19,8 +19,3 @@ Cada proyecto está desarrollado bajo estándares limpios, modulares y documenta
 - **Ideal para:** Bastionado (*hardening*) inicial de servidores y detección temprana de indicadores de compromiso (IoCs).
 
 ---
-
-## Competencias Técnicas Demostradas
-- **Automatización:** Control de flujo avanzado en Bash (bucles eficientes, condicionales lógicos complejos).
-- **Procesamiento de datos de bajo nivel:** Filtrado robusto de textos y logs del sistema mediante `awk`, `grep`, `sed` y `cut`.
-- **Hardening de Sistemas:** Gestión y auditoría profunda de identidades, privilegios y permisos octales en entornos Unix/Linux.
