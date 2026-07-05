@@ -18,15 +18,3 @@ El script automatiza de forma secuencial la extracción y el formateo de los sig
 6. **Análisis de Registros de Autenticación:** Inspecciona las últimas líneas de actividad del fichero `/var/log/auth.log` para evaluar de forma rápida vectores de ataque comunes como intentos de fuerza bruta por SSH.
 7. **Control de Privilegios en Archivos:** Examina el directorio de trabajo para listar y advertir sobre ficheros locales con permisos de escritura activos, mitigando riesgos de inyección de código.
 
----
-
-## Uso y Ejecución
-
-Para un análisis forense completo (especialmente para la lectura de sockets de procesos y logs de autenticación), se recomienda otorgar permisos y lanzar el script con privilegios elevados:
-
-```bash
-# Otorgar permisos de ejecución
-chmod +x basic_linux_audit.sh
-
-# Ejecutar auditoría completa
-sudo ./basic_linux_audit.sh
