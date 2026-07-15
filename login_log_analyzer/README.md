@@ -2,8 +2,6 @@
 
 Este módulo contiene un script automatizado en Bash (`login_log_analyzer.sh`) diseñado para centralizar, filtrar y parsear de forma estructurada los registros de autenticación del sistema en Linux (`/var/log/auth.log`).
 
-La herramienta simula el comportamiento de un **SIEM (Security Information and Event Management)** local, clasificando eventos y detectando anomalías en tiempo real.
-
 ---
 
 ## Funcionalidades del Script
