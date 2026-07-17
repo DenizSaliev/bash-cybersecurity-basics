@@ -19,14 +19,14 @@ Cada proyecto está desarrollado bajo estándares limpios, modulares y documenta
 - **Ideal para:** Bastionado (*hardening*) inicial de servidores y detección temprana de indicadores de compromiso (IoCs).
 
 ---
-## 3. SIEM Log Analyzer & Auth Parser
+### [3. SIEM Log Analyzer Auditor](./login_log_analyzer/)
 
-* **Script:** [`login_log_analyzer.sh`](./SIEM-log-analyzer/login_log_analyzer.sh)
+* **Script:** `login_log_analyzer.sh`
 * **Propósito:** Automatiza el análisis y la centralización de fallos de autenticación correlacionando tres vectores de acceso críticos: control de interfaz gráfica (`gdm-password`), escalada local de privilegios (`sudo` / `su`) y fuerza bruta remota (`sshd`) con aislamiento unívoco de IPs y usuarios afectados.
 * **Ideal para:** Monitorización de seguridad del host, auditoría interna de accesos y fases de triaje inicial en respuesta a incidentes.
 
-## 4. Network Traffic Analysis & Protocol Auditing
+### 4. Network Traffic Analysis & Protocol Auditing
 
-* **Documentación:** [`wireshark-basic-analysis.md`](./network-traffic-analysis/wireshark-basic-analysis.md)
+* **Documentación:** `wireshark-basic-analysis.md`
 * **Propósito:** Evaluación forense de una sesión de red capturada a través de Wireshark (`.pcapng`). Analiza la traducción de nombres de dominio (Query/Response de DNS sobre UDP) y audita la fase de negociación e inicio de sesión de transporte mediante la interceptación del *TCP Three-Way Handshake*.
 * **Ideal para:** Análisis de flujos de comunicación, detección de anomalías en tránsito y fundamentos de seguridad en redes.
