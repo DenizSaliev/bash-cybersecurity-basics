@@ -1,10 +1,10 @@
-# 🌐 Análisis Básico de Tráfico de Red con Wireshark
+# Análisis Básico de Tráfico de Red con Wireshark
 
 Este informe detalla la auditoría y análisis forense del tráfico generado durante una sesión controlada de red en un entorno Linux, dando cumplimiento estricto a los requisitos técnicos solicitados en la práctica obligatoria.
 
 ---
 
-## 📋 Detalles de la Sesión
+## Detalles de la Sesión
 * **Documento entregable:** `wireshark-basic-analysis.md`
 * **Herramienta utilizada:** Wireshark (Captura interactiva de paquetes)
 * **Fichero generado:** `web_dns_capture.pcapng`
