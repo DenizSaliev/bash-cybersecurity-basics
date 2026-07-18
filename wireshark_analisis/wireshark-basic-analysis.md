@@ -47,7 +47,7 @@ Tras aplicar el filtro de visualización `dns` en la interfaz de Wireshark, se a
 * **Respuesta (Standard Query Response):** El servidor contestó de manera inmediata (paquetes 3 y 5) adjuntando el direccionamiento del dominio consultado, resolviendo de manera unívoca la IPv4 de Google como `216.58.204.174`.
 
 > *Evidencia de la resolución e interacciones DNS:*
-> ![Consulta DNS](./assets/dns_query.png)
+> ![Consulta DNS](./assets/dns.png)
 
 ### B. El Apretón de Manos de Tres Vías (TCP Three-Way Handshake)
 Para abrir formalmente el canal de transporte web seguro hacia el servidor balanceador de Amazon (IP destino `34.160.144.191`) a través del puerto 443, se interceptó y auditó el proceso del *Three-Way Handshake* en estricto orden cronológico:
