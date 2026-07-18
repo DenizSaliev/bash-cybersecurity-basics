@@ -59,9 +59,6 @@ Para abrir formalmente el canal de transporte web seguro hacia el servidor balan
 > *Evidencia del Handshake TCP 3-Way interceptado:*
 > ![TCP Handshake](./assets/handshake.png)
 
-> ### Conclusiones del Aprendizaje
-> A través de esta práctica de laboratorio, se asimila de forma pragmática que la conectividad en sistemas informáticos es un proceso secuencial estrictamente dependiente: ningún navegador web del planeta puede iniciar una negociación de transporte TCP sin haber completado previamente de manera exitosa un ciclo completo de intercambio de paquetes UDP bajo DNS para mapear la ubicación geográfica y lógica del servidor de destino.
-
 ---
 
 ## 5. Dudas Técnicas de Carácter Avanzado
