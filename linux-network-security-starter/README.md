@@ -1,51 +1,38 @@
-# Linux & Network Security Starter Kit
+# Bash Scripting & Fundamentos de Seguridad en Linux
 
-Bienvenido al proyecto integrador del **Primer Mes** de mi preparación orientada a **Ciberseguridad Junior / Blue Team**. Este repositorio unifica las herramientas desarrolladas, los análisis de tráfico de red y las evidencias de laboratorio para demostrar capacidades prácticas en administración de sistemas, automatización con Bash Scripting y auditoría defensiva.
+Bienvenido a este repositorio. Soy Deniz Shoray Saliev Nikolov, estudiante del ciclo formativo de grado superior en **ASIR** (Administración de Sistemas Informáticos en Red). 
 
----
+Este repositorio reúne un conjunto de scripts sencillos y prácticas de laboratorio desarrolladas durante mi primer bloque de preparación técnica para orientar mi perfil hacia la ciberseguridad junior (seguridad defensiva / Blue Team).
 
-## Sobre Mí
-- **Nombre:** Deniz Shoray Saliev Nikolov
-- **Perfil:** Estudiante de ASIR | Técnico de Sistemas enfocado a Ciberseguridad (SOC / Blue Team / Linux Security).
-- **Objetivo:** Construir una base técnica sólida e inquebrantable en administración de infraestructuras Linux, análisis forense de logs y fundamentos de redes antes de dar el salto a metodologías defensivas avanzadas.
-
----
-
-## Herramientas Utilizadas
-- **Sistema Operativo:** Ubuntu Linux
-- **Lenguajes & Shell:** Bash Scripting (Grep, Cut, Sed, Regex, Sort, Uniq)
-- **Análisis de Red:** Wireshark, Nslookup, SS / Netstat
-- **Control de Versiones & Docs:** Git, GitHub, Markdown, VS Code
+El objetivo principal es consolidar una base práctica y sólida en la administración de entornos Linux, la automatización básica mediante Bash, el análisis inicial de registros de autenticación y la inspección de tráfico de red.
 
 ---
 
 ## Contenido del Repositorio
 
-### 1. `scripts/` (Automatización y Auditoría)
-* **`check_network.sh`**: Diagnóstico automatizado de red en Capa 3 y 7, mapeo de gateways y listado de sockets/puertos abiertos para evaluar la superficie de exposición.
-* **`basic_linux_audit.sh`**: Recolección de artefactos forenses locales, clasificación de usuarios por rango UID (identificación de cuentas con privilegios), detección de shells interactivas y permisos débiles.
-* **`login_log_analyzer.sh`**: Parser defensivo simulador de SIEM local que audita `/var/log/auth.log`, unificando accesos gráficos (`gdm`), escaladas de privilegios (`sudo`) y ataques remotos (`sshd`).
+El proyecto integrador del primer mes se encuentra documentado dentro de la carpeta:
 
-### 2. `captures/` & `docs/` (Auditoría de Tráfico)
-* **`captura_dns.png` & `captura_tcp.png`**: Evidencias fotográficas de la resolución de nombres UDP y el apretón de manos de 3 vías de TCP.
-* **`wireshark-basic-analysis.md`**: Análisis documental detallado del comportamiento de protocolos de transporte y aplicación.
-* **`month1-reflection.md`**: Memoria técnica y reflexión personal sobre el progreso acumulado en el mes.
+### [`linux-network-security-starter/`](./linux-network-security-starter/)
+Reúne el conjunto de herramientas iniciales desarrolladas durante las primeras cuatro semanas:
+
+1. **`scripts/check_network.sh`**: Comprobación rápida de conectividad local y externa (Capa 3 y 7), identificación de interfaces de red y listado de puertos en escucha mediante `ss`.
+2. **`scripts/basic_linux_audit.sh`**: Script para inspección básica del sistema: conteo de usuarios estándar (UID >= 1000), detección de shells interactivas (`/bin/bash`), procesos con alto consumo de recursos y comprobación de permisos de escritura.
+3. **`scripts/login_log_analyzer.sh`**: Parser defensivo que audita `/var/log/auth.log` para contar e identificar intentos fallidos de autenticación en entorno gráfico (`gdm`), escalada de privilegios (`sudo`) y conexiones remotas (`sshd`).
+4. **`docs/wireshark-basic-analysis.md`**: Memoria técnica donde se analiza una captura de red (`web_dns_capture.pcapng`), explicando la resolución DNS sobre UDP y el Three-Way Handshake de TCP.
+5. **`docs/month1-reflection.md`**: Reflexión estructurada sobre el aprendizaje y las dificultades encontradas durante el mes.
+6. **`docs/improvements-week1.md`**: Registro de mejoras y refactorización de código aplicadas tras la revisión técnica.
 
 ---
 
-## Cómo Ejecutar los Scripts
+##  Requisitos y Ejecución General
 
-Asegúrate de otorgar permisos de ejecución antes de lanzar cualquiera de las herramientas:
+* **Sistema operativo:** Probado en Ubuntu Linux.
+* **Intérprete:** Bash 4.x o superior.
+* **Permisos:** Algunos scripts (como el lector de logs) requieren privilegios de administración (`sudo`) para acceder a rutas restringidas como `/var/log/auth.log`.
 
 ```bash
-# Dar permisos de ejecución
-chmod +x scripts/*.sh
+# Otorgar permisos de ejecución a los scripts
+chmod +x linux-network-security-starter/scripts/*.sh
 
-# Ejecutar el analizador de red
-./scripts/check_network.sh
-
-# Ejecutar la auditoría de sistema
-./scripts/basic_linux_audit.sh
-
-# Ejecutar el analizador de logs de autenticación (requiere acceso a /var/log/auth.log)
-sudo ./scripts/login_log_analyzer.sh
+# Ejecutar cualquiera de las herramientas
+./linux-network-security-starter/scripts/check_network.sh
